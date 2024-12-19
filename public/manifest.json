@@ -1,0 +1,17 @@
+{
+    "name": "HSSE RUN APP",
+    "short_name": "HSSERUN",
+    "start_url": "/index.php",
+    "background_color": "#ffffff",
+    "description": "HSSE RUNNING EVENTS",
+    "display": "fullscreen",
+    "theme_color": "#ffffff",
+    "icons": [
+        {
+            "src": "assets/img/ternate-berlari.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ]
+}
