@@ -1,5 +1,3 @@
-Berikut adalah contoh README untuk web pendaftaran event yang bisa kamu gunakan dan sesuaikan dengan kebutuhan proyek:
-
 ---
 
 # Web Pendaftaran Event
@@ -109,3 +107,5 @@ Jika Anda ingin berkontribusi dalam pengembangan aplikasi ini, Anda dapat:
 
 ## Lisensi
 Aplikasi ini menggunakan lisensi [MIT](LICENSE).
+
+---
