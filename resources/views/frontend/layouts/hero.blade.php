@@ -1,16 +1,18 @@
 <!-- Hero Section -->
 <section class="bg-cover bg-center" style="background-image: url('{{ asset('assets/img/herobg.jpg') }}');">
     <div
-        class="min-h-screen flex items-center bg-gradient-to-t from-yellow-500/80 to-green-500/80 justify-center px-24 md:px-8 lg:px-16">
+        class="min-h-screen flex items-center bg-gradient-to-t from-yellow-500/80 to-green-500/80 justify-center px-16 md:px-8 lg:px-16">
         <div class="mx-auto md:gap-8 lg:py-16 lg:px-16 ">
             <!-- Teks Hero -->
             <div class="place-self-center col-span-2 lg:text-left">
                 <div>
-                    <p class="font-sans text-sm font-semibold md:text-xl lg:text-2xl text-white lg:mb-8">
-                        Minggu, 20 Januari 2025 | 9:00AM WIT
+                    <img src="{{ asset('assets/img/fgng.png') }}" alt="fgng-logo"
+                        class="w-52 lg:w-60 justify-self-center pb-2 lg:pb-10">
+                    <p class="font-sans text-sm font-semibold md:text-xl lg:text-2xl text-white lg:mb-5">
+                        Senin, 20 Januari 2025 | 9:00AM WIT
                     </p>
                     <h1
-                        class="font-sans text-5xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white mb-4">
+                        class="font-sans text-4xl md:text-4xl lg:text-5xl font-extrabold tracking-tight leading-none text-white mb-4">
                         {{ $websiteTitle }}
                     </h1>
 

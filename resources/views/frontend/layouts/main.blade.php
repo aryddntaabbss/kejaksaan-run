@@ -12,8 +12,8 @@
         <meta content="{{ $websiteKeyword }}" name="keywords">
 
         <!-- Favicons -->
-        <link href="{{ asset('storage/' . $websiteLogo) }}" rel="icon">
-        <link href="{{ asset('storage/' . $websiteLogo) }}" rel="apple-touch-icon">
+        <link href="{{ asset('assets/img/fgng.png') }}" rel="icon">
+        <link href="{{ asset('assets/img/fgng.png') }}" rel="apple-touch-icon">
         <meta name="author" content="TongIt">
 
         <!-- Google Fonts -->

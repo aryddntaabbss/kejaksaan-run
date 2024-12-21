@@ -21,7 +21,7 @@
 
             <!-- Navigation Links -->
             <div class="hidden w-full lg:flex lg:w-auto" id="mobile-menu">
-                <ul class="flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                <ul class="flex flex-col font-medium lg:flex-row lg:space-x-3 lg:mt-0">
                     <li>
                         <a href="{{ route('index') }}"
                             class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:text-primary-700 lg:p-2 hover:bg-green-500 hover:text-white"
@@ -47,7 +47,7 @@
                     <!-- Dropdown -->
                     <li class="group" id="dropdown">
                         <button
-                            class="block py-2 pr-4 pl-3 rounded-sm lg:bg-transparent lg:text-primary-700 lg:p-2 hover:bg-green-500 hover:text-white"
+                            class="block py-2 pr-4 pl-3 rounded lg:bg-transparent lg:text-primary-700 lg:p-2 hover:bg-green-500 hover:text-white"
                             aria-haspopup="true" aria-expanded="false">
                             {{ $menu->name }}
                         </button>
@@ -76,8 +76,8 @@
                         @endphp
                         @if (!$tanggalEvent->isPast())
                         <a href="#pendaftaran"
-                            class="block w-full lg:w-40 px-2 py-2 text-center   bg-green-400 text-white rounded-lg hover:bg-green-500 shadow-xl">
-                            Daftar Sekarang
+                            class="block w-full lg:w-20 px-2 py-2 text-center   bg-green-400 text-white rounded-lg hover:bg-green-500 shadow-xl">
+                            Daftar
                         </a>
                         @endif
                     </li>

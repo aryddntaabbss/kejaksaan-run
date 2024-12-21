@@ -154,7 +154,29 @@ $tanggalEvent = \Carbon\Carbon::parse($settings['tanggal_event']);
                     </div>
 
                     <input type="hidden" name="id_road_race" id="" value="{{ $road_race->id }}">
+                    @if ($road_race->nama == 5)
                     <input type="hidden" name="id_kategori" id="" value="1">
+                    @else
+                    <!-- Kategori Usia -->
+                    <div class="col-span-1">
+                        <label for="kategori_usia" class="block text-sm font-medium text-gray-700">Kategori
+                            Usia</label>
+                        <select name="id_kategori" id="kategori_usia" required class="mt-1 p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500
+                                                        @error('id_kategori') border-red-500 @enderror">
+                            <option value="">-- Pilih Kategori Usia --</option>
+                            @foreach ($kategori as $ku)
+                            @if ($ku->id != 1)
+                            <option value="{{ $ku->id }}" {{ old('id_kategori') == $ku->id ? 'selected' : '' }}>
+                                {{ $ku->name }} ({{ $ku->umur }})
+                            </option>
+                            @endif
+                            @endforeach
+                        </select>
+                        @error('id_kategori')
+                        <p class="text-sm text-red-600 mt-1">{{ $message }}</p>
+                        @enderror
+                    </div>
+                    @endif
 
                     <!-- Size Jersey -->
                     <div class="col-span-1">
@@ -229,7 +251,8 @@ $tanggalEvent = \Carbon\Carbon::parse($settings['tanggal_event']);
                         <input type="checkbox" name="chek_sehat" id="chek_sehat" class="mr-2"
                             {{ old('chek_sehat') ? 'checked' : '' }}>
                         <label for="chek_sehat" class="text-sm text-gray-700">
-                            Saya menyetujui dan secara langsung menyatakan sehat jasmani dan rohani.
+                            Saya menyetujui dan secara langsung menyatakan sehat jasmani dan rohani, Serta tidak memilki
+                            riwayat penyakit jantung dan asma.
                         </label>
                         @error('chek_sehat')
                         <p class="text-sm text-red-600 mt-1 ml-2">{{ $message }}</p>
