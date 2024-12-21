@@ -46,6 +46,9 @@ Route::prefix('dashboard')->middleware('auth')->group(function () {
     Route::delete('/data-peserta/{id}', [PesertaController::class, 'destroy'])->name('peserta.destroy');
     Route::post('/data-peserta/{id}/update-status', [PesertaController::class, 'updateStatus'])->name('peserta.updateStatus');
     Route::get('/export-peserta', [PesertaController::class, 'exportPeserta'])->name('export.peserta');
+    Route::get('/data-peserta/{id}/edit', [PesertaController::class, 'edit'])->name('peserta.edit');
+    Route::put('/data-peserta/{id}', [PesertaController::class, 'update'])->name('peserta.update');
+
     // menu
     Route::get('/menu', [MenuController::class, 'index'])->name('menu');
     Route::post('/menu', [MenuController::class, 'store'])->name('menu.store');

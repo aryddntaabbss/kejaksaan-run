@@ -86,12 +86,12 @@
                                             <td>-</td>
                                         @endif --}}
                                         <td>{{ $peserta->size_jersey }}</td>
-                                        <td><a class="btn btn-secondary"
+                                        <td><a class="btn btn-secondary btn-sm"
                                                 href="{{ asset('storage/' . $peserta->bukti_bayar) }}" target="_blank">Lihat
                                                 Bukti</a></td>
                                         <td>
                                             <a href="javascript:void(0)"
-                                                class="btn {{ $peserta->status == 'Terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light"
+                                                class="btn btn-sm {{ $peserta->status == 'Terverifikasi' ? 'btn-success' : 'btn-danger' }} text-light"
                                                 onclick="confirmStatusChange({{ $peserta->id }}, '{{ $peserta->status }}')">
                                                 {{ $peserta->status }}
                                             </a>
@@ -109,6 +109,10 @@
                                                 <a href="{{ route('peserta.show', $peserta->id) }}"
                                                     class="btn btn-primary btn-sm ms-1 mb-2 mb-md-0 mr-md-2"><i
                                                         class="bi bi-eye"></i></a>
+                                                <!-- Tombol Edit -->
+                                                <a href="{{ route('peserta.edit', $peserta->id) }}"
+                                                    class="btn btn-warning btn-sm ms-1 mb-2 mb-md-0 mr-md-2"><i
+                                                        class="bi bi-pen"></i></a>
 
                                                 <!-- Tombol Hapus -->
                                                 <form action="{{ route('peserta.destroy', $peserta->id) }}" method="POST"

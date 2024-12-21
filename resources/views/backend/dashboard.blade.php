@@ -55,7 +55,7 @@
             </div>
         </div>
         <!-- End Reports -->
-        {{-- <!-- Reports kategori pelari -->
+        <!-- Reports kategori pelari -->
         <div class="col-md-6">
             <div class="card">
                 <div class="card-body">
@@ -97,6 +97,6 @@
                 </div>
             </div>
         </div>
-        <!-- End Reports --> --}}
+        <!-- End Reports -->
     </div>
 @endsection
